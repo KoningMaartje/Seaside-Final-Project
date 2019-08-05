@@ -19,7 +19,7 @@ function formatDate(date) {
   return `${days[day]} ${date.getHours()}:${minutes}`;
 }
 
-let city = "Costa de Caparica";
+let city = "Costa de caparica, portugal";
 let temperature = document.querySelector("#temperature");
 
 function showWeather(response) {
