@@ -2,8 +2,8 @@ body {
   font-family: arial, sans-serif;
 }
 
-h1 {
-  color: #878787;
+.city {
+  color: rgb(62, 148, 139);
   font-size: 24px;
   line-height: 29px;
   margin: 0;
@@ -11,7 +11,7 @@ h1 {
 
 h2 {
   font-size: 64px;
-  color: rgb(33, 33, 33);
+  color: black;
   font-weight: 400;
   margin: 0;
 }
@@ -35,7 +35,7 @@ li {
 }
 
 .app {
-  border: 1px solid #dadde1;
+  border: 1px solid rgb(181, 198, 206);
   padding: 10px;
   margin: 30px auto;
   border-radius: 10px;
