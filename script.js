@@ -19,10 +19,10 @@ function formatDate(date) {
   return `${days[day]} ${date.getHours()}:${minutes}`;
 }
 
-let city = "Alkmaar";
+let city = "Costa de Caparica";
 let temperature = document.querySelector("#temperature");
 
-function showTemperature(response) {
+function showWeather(response) {
   let temperature = document.querySelector("#temperature");
   temperature.innerText = Math.round(response.data.main.temp);
 
@@ -37,9 +37,15 @@ function showTemperature(response) {
 
   let date = document.querySelector("#date");
   date.innerText = formatDate(new Date(response.data.dt * 1000));
+
+  let icon = document.querySelector("#icon");
+  icon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/w/${response.data.weather[0].icon}.png`
+  );
 }
 
 let apiKey = "f818ee5213a888b0cfd2836bbb855734";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
-axios.get(apiUrl).then(showTemperature);
+axios.get(apiUrl).then(showWeather);
