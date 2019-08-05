@@ -4,6 +4,15 @@ let temperature = document.querySelector("#temperature");
 function showTemperature(response) {
   let temperature = document.querySelector("#temperature");
   temperature.innerText = Math.round(response.data.main.temp);
+
+  let description = document.querySelector("#description");
+  description.innerText = response.data.weather[0].description;
+
+  let humidity = document.querySelector("#humidity");
+  humidity.innerText = response.data.main.humidity;
+
+  let wind = document.querySelector("#wind");
+  wind.innerText = Math.round(response.data.wind.speed);
 }
 
 let apiKey = "f818ee5213a888b0cfd2836bbb855734";
