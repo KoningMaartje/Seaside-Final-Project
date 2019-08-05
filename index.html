@@ -14,120 +14,49 @@
     <link rel="stylesheet" href="style.css" />
     <title>Seaside Lisbon</title>
   </head>
+
   <body>
     <div class="container">
-      <div class="row mt-3">
-        <div class="col-6">
-          <div class="app">
-            <h1>Costa de Caprica</h1>
-            <ul>
-              <li id="date"></li>
-              <li id="description" class="text-capitalize">Partly Cloudy</li>
-            </ul>
-            <div class="row mt-3">
-              <div class="col-6">
-                <div class="clearfix">
-                  <div class="float-left mr-3">
-                    <img id="icon" />
-                  </div>
-                  <div class="float-left">
-                    <h2><span id="temperature"></span><small>C</small></h2>
-                  </div>
+      <div class="container">
+        <div class="app">
+          <form class="form-inline mb-4">
+            <div class="form-group mx-sm-3 mb-2 mr-2">
+              <label for="inputPassword2" class="sr-only">Password</label>
+              <input
+                type="enter-city"
+                class="form-control"
+                id="enter-city"
+                placeholder="Enter a city..."
+                autofocus="on"
+                autocomplete="off"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">
+              Search
+            </button>
+          </form>
+          <h1 id="place">Costa de Caprica</h1>
+          <ul>
+            <li id="date"></li>
+            <li id="description" class="text-capitalize">Partly Cloudy</li>
+          </ul>
+          <div class="row mt-3">
+            <div class="col-6">
+              <div class="clearfix">
+                <div class="float-left mr-3">
+                  <img id="icon" />
                 </div>
-              </div>
-
-              <div class="col-6">
-                <ul>
-                  <li>Humidity: <span id="humidity"></span></li>
-                  <li>Wind: <span id="wind"></span> km/h</li>
-                </ul>
+                <div class="float-left">
+                  <h2><span id="temperature"></span><small>C</small></h2>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="app">
-            <h1>Carcavelos</h1>
-            <ul>
-              <li id="date"></li>
-              <li id="description" class="text-capitalize">Partly Cloudy</li>
-            </ul>
-            <div class="row mt-3">
-              <div class="col-6">
-                <div class="clearfix">
-                  <div class="float-left mr-3">
-                    <img id="icon" />
-                  </div>
-                  <div class="float-left">
-                    <h2><span id="temperature"></span><small>C</small></h2>
-                  </div>
-                </div>
-              </div>
 
-              <div class="col-6">
-                <ul>
-                  <li>Humidity: <span id="humidity"></span></li>
-                  <li>Wind: <span id="wind"></span> km/h</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row mt-3">
-        <div class="col-6">
-          <div class="app">
-            <h1>Sesimbra</h1>
-            <ul>
-              <li id="date"></li>
-              <li id="description" class="text-capitalize">Partly Cloudy</li>
-            </ul>
-            <div class="row mt-3">
-              <div class="col-6">
-                <div class="clearfix">
-                  <div class="float-left mr-3">
-                    <img id="icon" />
-                  </div>
-                  <div class="float-left">
-                    <h2><span id="temperature"></span><small>C</small></h2>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-6">
-                <ul>
-                  <li>Humidity: <span id="humidity"></span></li>
-                  <li>Wind: <span id="wind"></span> km/h</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="app">
-            <h1>Ericeira</h1>
-            <ul>
-              <li id="date"></li>
-              <li id="description" class="text-capitalize">Partly Cloudy</li>
-            </ul>
-            <div class="row mt-3">
-              <div class="col-6">
-                <div class="clearfix">
-                  <div class="float-left mr-3">
-                    <img id="icon" />
-                  </div>
-                  <div class="float-left">
-                    <h2><span id="temperature"></span><small>C</small></h2>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-6">
-                <ul>
-                  <li>Humidity: <span id="humidity"></span></li>
-                  <li>Wind: <span id="wind"></span> km/h</li>
-                </ul>
-              </div>
+            <div class="col-6">
+              <ul>
+                <li>Humidity: <span id="humidity"></span></li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+              </ul>
             </div>
           </div>
         </div>

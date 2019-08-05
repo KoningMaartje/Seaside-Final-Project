@@ -19,12 +19,12 @@ function formatDate(date) {
   return `${days[day]} ${date.getHours()}:${minutes}`;
 }
 
-let city = "Costa de caparica, portugal";
-let temperature = document.querySelector("#temperature");
-
 function showWeather(response) {
   let temperature = document.querySelector("#temperature");
   temperature.innerText = Math.round(response.data.main.temp);
+
+  let place = document.querySelector("#place");
+  place.innerText = response.data.name;
 
   let description = document.querySelector("#description");
   description.innerText = response.data.weather[0].description;
@@ -45,6 +45,7 @@ function showWeather(response) {
   );
 }
 
+let city = "Costa de caparica, portugal";
 let apiKey = "f818ee5213a888b0cfd2836bbb855734";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
