@@ -10,18 +10,22 @@
       crossorigin="anonymous"
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Blinker&display=swap"
+      rel="stylesheet"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
     <title>Seaside Lisbon</title>
   </head>
 
   <body>
+    <p>Maartje's Weather App</p>
     <div class="container">
-      <div class="container">
+      <div class="col-6 center-block">
         <div class="app">
           <form class="form-inline mb-4">
             <div class="form-group mx-sm-3 mb-2 mr-2">
-              <label for="inputPassword2" class="sr-only">Password</label>
               <input
                 type="enter-city"
                 class="form-control"
@@ -31,7 +35,7 @@
                 autocomplete="off"
               />
             </div>
-            <button type="submit" class="btn btn-primary mb-2">
+            <button type="submit" class="btn btn-warning mb-2">
               Search
             </button>
           </form>
@@ -61,6 +65,7 @@
           </div>
         </div>
       </div>
+    </div>
     </div>
     <script src="script.js"></script>
   </body>

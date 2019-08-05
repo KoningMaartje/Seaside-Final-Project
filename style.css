@@ -40,3 +40,25 @@ li {
   margin: 30px auto;
   border-radius: 10px;
 }
+
+p {
+  font-size: 28px;
+  color: rgb(62, 148, 139);
+  font-family: "Blinker", sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+.form-inline {
+  color: yellow;
+}
+
+.btn {
+  color: white;
+}
+
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
